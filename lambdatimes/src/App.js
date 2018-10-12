@@ -2,15 +2,25 @@ import React, { Component } from 'react';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
+import { cardData } from './data';
 
-const App = () => {
-  return (
-    <div className="App">
-      <TopBar />
-      <Header />
-      <Content />
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      cardData,
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <TopBar />
+        <Header />
+        <Content cards={this.state.cardData}/>
+      </div>
+    );
+  }
 }
 
 export default App;
