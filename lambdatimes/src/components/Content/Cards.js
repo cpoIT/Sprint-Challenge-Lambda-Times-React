@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { cardData } from '../../data';
 
 const Cards = props => {
-  console.log(props.cards)
   return (
     <div className="cards-container">
       {/* Using the cards prop, map over the list creating a 
@@ -19,6 +18,8 @@ const Cards = props => {
 
 // Make sure you include prop types for all of your incoming props
 
-// Cards.propTypes = PropTypes.arrayOf(PropTypes.objects)
+Cards.propTypes = {
+  card: PropTypes.arrayOf(PropTypes.objects)
+}
 
 export default Cards;
