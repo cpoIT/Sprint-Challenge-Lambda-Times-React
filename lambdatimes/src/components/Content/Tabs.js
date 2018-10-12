@@ -12,18 +12,18 @@ const Tabs = props => {
         {/* <Tab tab={props.tab} /> */}
         {/* map over the tabs provided on your props, create a new Tab component for each one.
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/}
-            {/* {props.tabs.map(tab => {
+            {props.tabs.map(tab => {
               return (
                 <Tab
                   key={tab}
                   tab={tab}
-                  selectTabHandler={tab.selectTabHandler}
-                  selectedTab={tab.selectedTab}
+                  selectTabHandler={props.selectTabHandler}
+                  selectedTab={props.selectedTab}
                   />
               ) // end of inner return
             }) // end of map
 
-            } */}
+            }
       </div>
     </div>
   );  // end of outer return
@@ -32,10 +32,11 @@ const Tabs = props => {
 // Make sure to use PropTypes to validate your types!
 
 // Tabs.propTypes = {
-//   card: PropTypes.shape({
-//     headline: PropTypes.string.isRequired,
-//     img: PropTypes.string.isRequired,
-//     author: PropTypes.string.isRequired,
+//   tab: PropTypes.shape({
+//     key: PropTypes.string,
+//     tab: PropTypes.string,
+//     selectTabHandler: PropTypes.func,
+//     selectedTab: PropTypes.string,
 //   })
 // }
 

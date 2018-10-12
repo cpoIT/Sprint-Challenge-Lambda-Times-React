@@ -20,7 +20,7 @@ export default class Content extends Component {
     // Once the component has mounted, get the data and reflect that data on the state.
     setTimeout(() => {
       this.setState({ 
-        tabs: Tabs,
+        tabs: tabData,
         cards: cardData,
       })
     }, 500)
@@ -66,7 +66,7 @@ export default class Content extends Component {
         <Tabs 
         tabs={this.state.tabs} 
         selectedTab={this.state.selected}
-        selectTabHandler={this.state.selectTabHandler}
+        selectTabHandler={this.changeSelected}
         />
         <Cards cards={this.filterCards()} />
       </div>

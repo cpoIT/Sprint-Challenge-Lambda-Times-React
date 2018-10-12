@@ -21,7 +21,8 @@ class App extends React.Component {
         <Header />
         <Content 
         cards={this.state.cardData}
-        tabs={this.state.tabData}/>
+        tabs={this.state.tabData}
+        />
       </div>
     );
   }

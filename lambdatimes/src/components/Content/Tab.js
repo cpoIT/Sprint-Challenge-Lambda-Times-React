@@ -11,7 +11,7 @@ const Tab = props => {
   return (
     <div
       className={cN}
-      onClick={() => {
+      onClick={(tab) => {
         /* Replace this dummy click handler function with your selectTabHandler function from props 
          you'll need to pass the `tab` in as an argument to this handler. */
          props.selectTabHandler(props.tab)
@@ -26,9 +26,8 @@ const Tab = props => {
 
 // Tab.propTypes = {
 //   card: PropTypes.shape({
-//     headline: PropTypes.string.isRequired,
-//     img: PropTypes.string.isRequired,
-//     author: PropTypes.string.isRequired,
+//     className: PropTypes.string,
+//     onClick: PropTypes.func,
 //   })
 // }
 
