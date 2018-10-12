@@ -3,12 +3,14 @@ import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
 import { cardData } from './data';
+import { tabData } from './data';
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       cardData,
+      tabData,
     }
   }
 
