@@ -31,13 +31,12 @@ const Tabs = props => {
 
 // Make sure to use PropTypes to validate your types!
 
-// Tabs.propTypes = {
-//   tab: PropTypes.shape({
-//     key: PropTypes.string,
-//     tab: PropTypes.string,
-//     selectTabHandler: PropTypes.func,
-//     selectedTab: PropTypes.string,
-//   })
-// }
+Tabs.propTypes = {
+  tab: PropTypes.shape({
+    key: PropTypes.string,
+    selectTabHandler: PropTypes.func,
+    selectedTab: PropTypes.string,
+  })
+}
 
 export default Tabs;

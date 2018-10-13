@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { carouselData } from '../../data'
 // Complete this Carousel 
+console.log(carouselData)
 export default class Carousel extends Component {
   constructor(props){
     super(props);

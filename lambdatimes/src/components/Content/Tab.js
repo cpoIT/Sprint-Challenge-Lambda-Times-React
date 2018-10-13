@@ -24,11 +24,10 @@ const Tab = props => {
 
 // Make sure you include PropTypes on your props.
 
-// Tab.propTypes = {
-//   card: PropTypes.shape({
-//     className: PropTypes.string,
-//     onClick: PropTypes.func,
-//   })
-// }
+Tab.propTypes = {
+  className: PropTypes.string,
+  onClick: PropTypes.func,
+
+}
 
 export default Tab;
